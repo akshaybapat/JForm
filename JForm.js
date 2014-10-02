@@ -5,7 +5,7 @@
 *
 ======================================================*/
 
-/*	JForm Object Constructor
+/* JForm Object Constructor
 ========================*/
 
 (function(){
