@@ -36,11 +36,11 @@ Usage
 
 	JForm.readFromLocalStorage(key);
 	
-		e.g. var UserObject = JForm.readFromLocalStorage(123);
+		e.g. var UserObject = JForm.readFromLocalStorage(1234);
 	
 	JForm.readFromSessionStorage(key);
 	
-		e.g. var UserObject = JForm.readFromSessionStorage(123);
+		e.g. var UserObject = JForm.readFromSessionStorage(1234);
 
 
 5. Add Online / Offline Listener Events
