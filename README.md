@@ -12,7 +12,7 @@ Usage
 
 		e.g. JForm("password","sl$ne3krn"); // returns true
 	
-		e.g. JForm("email","aks@."); // returns false
+		     JForm("email","aks@."); // returns false
 
 2. Check Password Strength
 
