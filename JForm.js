@@ -1,6 +1,6 @@
 /*=====================================================
 *
-*	JForm : Smart Form JavaScript Library
+*	JForm : User JavaScript Library
 *	(c) Akshay Bapat
 *
 ======================================================*/
@@ -23,7 +23,7 @@ function JForm() {
 
 };
 
-/*	JForm Prototype Functions
+/* JForm Prototype Functions
 ============================*/
 
 JForm.prototype = {
@@ -103,15 +103,18 @@ JForm.prototype = {
 		var enoughRegex = new RegExp("(?=.{6,}).*", "g");
 		var pwd = document.getElementById(passwordDiv);
 			if (pwd.value.length==0) {
-			strength.innerHTML = ‘Type Password’;
+			strength.innerHTML = "Type Password";
 			} else if (false == enoughRegex.test(pwd.value)) {
-			strength.innerHTML = ‘More Characters’;
+			strength.innerHTML = "More Characters";
 			} else if (strongRegex.test(pwd.value)) {
-			strength.innerHTML = ‘<span style="color:green">Strong!</span>’;
+			strength.innerHTML = '<span>Strong!</span>'
+			strength.style='color:green';
 			} else if (mediumRegex.test(pwd.value)) {
-			strength.innerHTML = ‘<span style="color:orange">Medium!</span>’;
+			strength.innerHTML = '<span>Medium!</span>';
+			strength.style='color:orange';
 			} else {
-			strength.innerHTML = ‘<span style="color:red">Weak!</span>’;
+			strength.innerHTML = '<span>Weak!</span>';
+			strength.style='color:red';
 			}
 		},
 
@@ -168,17 +171,15 @@ JForm.prototype = {
 			window.addEventListener("offline",function(){
 				document.getElementById(messageDiv).innerHTML = "You are Offline!";
 			})
-		};	
+		}	
 
+
+	};
 
 		//Instantiate new JForm Object so as to enable direct implementation in its calling JS File.
-
 		if (typeof window === "object" && typeof window.document === "object") {
 			window.JForm = JForm
 			window.JForm = new JForm();
 		}
-
-
-	};
 
 })();//Immediately Invoking Function Expression (IIFE)
