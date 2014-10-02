@@ -28,9 +28,9 @@ Usage
 
 		e.g. var UserObject = {}
 
-		e.g. JForm.saveToLocalStorage(1234,UserObject)
+		     JForm.saveToLocalStorage(1234,UserObject)
 	
-		e.g. JForm.saveToSessionStorage(1234,UserObject)
+		     JForm.saveToSessionStorage(1234,UserObject)
 
 4. Read from LoaclStorage / Session Storage
 
