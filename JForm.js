@@ -1,6 +1,6 @@
 /*=====================================================
 *
-*	JForm : User JavaScript Library
+*	JForm : Smart Form JavaScript Library
 *	(c) Akshay Bapat
 *
 ======================================================*/
